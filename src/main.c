@@ -2496,6 +2496,7 @@ scripterror:
 			mch_errmsg("\"\n");
 			mch_exit(2);
 		    }
+		    setvbuf(scriptout, NULL, _IONBF, 0);
 		    break;
 
 #ifdef FEAT_GUI_W32
